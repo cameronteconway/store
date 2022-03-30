@@ -1,0 +1,37 @@
+:root {
+    --primary: #ecc30b;
+    --secondary: #242f40;
+    --background: #f6f7eb;
+    --dark-text: #424249;
+    --dark-background: #2a3d45;
+    --cyan: #73d2de;
+    --pink: #e78eba;
+    --olive: #aca81a;
+    --orange: #f39239;
+    --purple: #792359;
+    --kakhi: #847b51;
+    --white: #e9e8e8;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Barlow', sans-serif;
+    /* font-family: 'Shippori Mincho B1', serif; */
+    background-color: var(--background);
+}
+
+.wrapper {
+    max-width: 1250px;
+    margin: auto;
+    padding: 0 1rem;
+    /* overflow: auto; */
+}
+
+section {
+    padding: 2rem 0;
+}
