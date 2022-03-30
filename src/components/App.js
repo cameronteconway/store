@@ -2,6 +2,7 @@ import React from 'react';
 import Header from './Header';
 import Blogs from './Blogs';
 import Social from './Social';
+import Trends from './Trends';
 
 import './App.css';
 
@@ -12,6 +13,7 @@ const App = () => {
         <div>
             <Header />
             <main id='content'>
+                <Trends />
                 <Blogs data={blogsData} />
                 <Social />
             </main>
