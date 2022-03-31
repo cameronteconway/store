@@ -11,7 +11,7 @@
     color: var(--pink);
     letter-spacing: 3px;
     text-shadow: 2px 2px 0px var(--secondary);
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     font-size: 26px;
 }
 .blogs-read-more {
@@ -54,4 +54,8 @@
 }
 
 @media only screen and (min-width: 1200px) {
+    .section-title {
+        font-size: 30px;
+        margin-bottom: 35px;
+    }
 }

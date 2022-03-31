@@ -42,15 +42,28 @@
 .trends-container .trend-item a span {
     position: absolute;
     bottom: 15px;
-    left: 10px;
+    left: 15px;
     padding: 5px 7px 5px 7px;
     font-weight: 900;
-    font-size: 20px;
+    font-size: 18px;
     letter-spacing: 2px;
     font-family: 'Acme', sans-serif;
     border: 2px solid var(--primary);
     background-color: var(--primary);
     color: var(--dark-text);
+}
+/* .trends-container .trend-item:nth-of-type(1) a span {
+    transform: rotate(2deg);
+}
+.trends-container .trend-item:nth-of-type(2) a span {
+    transform: rotate(-2deg);
+} */
+
+.trends-container .trend-item a:hover span,
+.trends-container .trend-item a:focus span {
+    border: 2px solid var(--purple);
+    background-color: var(--purple);
+    color: var(--cyan);
 }
 
 @media only screen and (min-width: 600px) {
@@ -67,9 +80,8 @@
 }
 
 @media only screen and (min-width: 992px) {
-    .trends-container {
-        -webkit-column-gap: 60px;
-        column-gap: 60px;
+    .trends-container .trend-item a span {
+        font-size: 20px;
     }
 }
 

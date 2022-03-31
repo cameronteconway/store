@@ -3,6 +3,16 @@ header {
     padding-top: 10px;
     padding-bottom: 25px;
 }
+.hide {
+    display: none;
+    visibility: hidden;
+}
+.show {
+    opacity: 1;
+    transition: opacity 4s ease-in;
+    -moz-transition: opacity 4s ease-in;
+    -webkit-transition: opacity 4s ease-in;
+}
 header h1 {
     color: var(--primary);
     text-align: center;
@@ -56,9 +66,56 @@ header .nav-links a:nth-of-type(4):after {
     background-color: var(--orange);
 }
 
+.static-header {
+    position: static;
+}
+
+.sticky-header {
+    position: fixed;
+    background-color: var(--primary);
+    padding-top: 10px;
+    padding-bottom: 20px;
+    z-index: 10000;
+    width: 100%;
+    margin-top: -77px;
+    animation: fadeIn 0.2s both ease-in;
+}
+.sticky-header .header-wrapper {
+    max-width: 1200px;
+    margin: auto;
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+header .sticky-header h1 {
+    margin: unset;
+}
+header .sticky-header .nav-links {
+    text-align: end;
+    margin-top: 5px;
+}
+header .sticky-header .nav-links a {
+    margin-left: 10px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
 @media only screen and (min-width: 600px) {
     header .nav-links a {
         margin: 0 15px;
+    }
+    .sticky-header .header-wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+    header .sticky-header .nav-links {
+        margin-top: 10px;
     }
 }
 

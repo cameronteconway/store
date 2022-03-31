@@ -13,6 +13,9 @@
     text-align: center;
     padding: 1.5rem 0;
 }
+.social-container .newsletter h2 {
+    font-size: 23px;
+}
 .social-container .newsletter a {
     text-decoration: none;
     color: var(--white);
@@ -23,11 +26,11 @@
 }
 
 .social-container .social-links a {
-    margin: 0 10px;
     padding: 3px 6px 4px 6px;
     color: var(--dark-text);
     font-weight: 500;
     text-decoration: none;
+    display: block;
 }
 .social-container div.social-links a:hover,
 .social-container .social-links a:focus {
@@ -37,10 +40,12 @@
 .social-container .social-links a:nth-of-type(1) {
     border: 2px solid var(--orange);
     background-color: var(--orange);
+    margin-bottom: 15px;
 }
 .social-container .social-links a:nth-of-type(2) {
     border: 2px solid var(--olive);
     background-color: var(--olive);
+    margin-bottom: 15px;
 }
 .social-container .social-links a:nth-of-type(3) {
     border: 2px solid var(--cyan);
@@ -48,6 +53,9 @@
 }
 
 @media only screen and (min-width: 600px) {
+    .social-container .newsletter h2 {
+        font-size: 30px;
+    }
 }
 
 @media only screen and (min-width: 768px) {
@@ -55,10 +63,24 @@
         flex-direction: row;
         justify-content: space-between;
     }
+    .social-container div {
+        text-align: center;
+        padding: 1.5rem 0 1rem 0;
+    }
+    .social-container .newsletter h2 {
+        position: relative;
+        top: 6px;
+        font-size: 24px;
+    }
     .social-container .social-links {
         justify-content: end;
         position: relative;
         top: 4px;
+    }
+    .social-container .social-links a {
+        display: inline-block;
+        margin-bottom: 0px;
+        margin: 0 8px;
     }
 }
 

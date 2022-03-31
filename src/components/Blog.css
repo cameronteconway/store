@@ -1,6 +1,7 @@
 article {
     /* border: 1px solid red; */
-    font-family: 'Shippori Mincho B1', serif;
+    /* font-family: 'Shippori Mincho B1', serif; */
+    font-family: 'Libre Baskerville', serif;
 }
 article .blog-item .blog-title {
     display: block;
@@ -13,10 +14,12 @@ article .blog-item .blog-title {
 article .blog-item .blog-date {
     margin-top: 5px;
     display: block;
+    font-size: 15px;
 }
 article .blog-item p {
     display: block;
-    margin-top: 15px;
+    margin-top: 20px;
+    font-size: 15px;
 }
 
 article .blog-item .read-more {
@@ -25,7 +28,7 @@ article .blog-item .read-more {
     color: var(--dark-text);
     position: relative;
     width: fit-content;
-    margin-top: 15px;
+    margin-top: 20px;
     font-size: 15px;
 }
 article .blog-item .read-more:hover,
@@ -49,7 +52,7 @@ article .blog-item .read-more:focus:after {
 }
 
 article .blog-item .blog-detail {
-    margin-top: 20px;
+    margin-top: 25px;
 }
 article .blog-item .blog-detail span {
     position: relative;
@@ -62,4 +65,19 @@ article .blog-item .blog-detail span svg {
     height: 13px;
     width: 13px;
     margin-right: 4px;
+}
+
+@media only screen and (min-width: 600px) {
+}
+
+@media only screen and (min-width: 768px) {
+    article .blog-item p {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+}
+
+@media only screen and (min-width: 1200px) {
 }

@@ -16,6 +16,7 @@ const App = () => {
                 <Trends />
                 <Blogs data={blogsData} />
                 <Social />
+                {/* https://www.flatspot.com/collections/t-shirts?page=4 */}
             </main>
         </div>
     );
