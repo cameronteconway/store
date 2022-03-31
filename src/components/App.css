@@ -5,12 +5,15 @@
     --dark-text: #424249;
     --dark-background: #2a3d45;
     --cyan: #73d2de;
+    --blue: #5aa9da;
     --pink: #e78eba;
     --olive: #aca81a;
     --orange: #f39239;
     --purple: #792359;
     --kakhi: #847b51;
     --white: #e9e8e8;
+    --cream: #fcf5c7;
+    --red: #fa9092;
 }
 
 * {

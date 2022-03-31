@@ -3,6 +3,7 @@ import Header from './Header';
 import Blogs from './Blogs';
 import Social from './Social';
 import Trends from './Trends';
+import Footer from './Footer';
 
 import './App.css';
 
@@ -14,10 +15,10 @@ const App = () => {
             <Header />
             <main id='content'>
                 <Trends />
-                <Blogs data={blogsData} />
                 <Social />
-                {/* https://www.flatspot.com/collections/t-shirts?page=4 */}
+                <Blogs data={blogsData} />
             </main>
+            <Footer />
         </div>
     );
 };

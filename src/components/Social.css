@@ -23,6 +23,7 @@
 .social-container .newsletter a:hover,
 .social-container .newsletter a:focus {
     color: var(--primary);
+    outline: none;
 }
 
 .social-container .social-links a {
@@ -33,9 +34,10 @@
     display: block;
 }
 .social-container div.social-links a:hover,
-.social-container .social-links a:focus {
+.social-container div.social-links a:focus {
     background-color: transparent;
     color: var(--white);
+    outline: none;
 }
 .social-container .social-links a:nth-of-type(1) {
     border: 2px solid var(--orange);
