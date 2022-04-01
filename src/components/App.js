@@ -6,6 +6,7 @@ import Trends from './Trends';
 import Footer from './Footer';
 
 import './App.css';
+import 'bootstrap-icons/font/bootstrap-icons.css';
 
 import { blogsData } from '../data/data';
 
@@ -14,9 +15,9 @@ const App = () => {
         <div>
             <Header />
             <main id='content'>
-                <Trends />
-                <Social />
                 <Blogs data={blogsData} />
+                <Social />
+                <Trends />
             </main>
             <Footer />
         </div>

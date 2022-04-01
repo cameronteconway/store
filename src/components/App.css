@@ -1,5 +1,5 @@
 :root {
-    --primary: #ecc30b;
+    --primary: #ffe01c;
     --secondary: #242f40;
     --background: #f6f7eb;
     --dark-text: #424249;
@@ -35,5 +35,11 @@ body {
 }
 
 section {
-    padding: 2rem 0;
+    padding: 3rem 0;
+}
+section:first-of-type {
+    padding-top: 4rem;
+}
+section:last-of-type {
+    padding-bottom: 4rem;
 }
