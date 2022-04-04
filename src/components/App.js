@@ -15,9 +15,9 @@ const App = () => {
         <div>
             <Header />
             <main id='content'>
-                <Blogs data={blogsData} />
-                <Social />
                 <Trends />
+                <Social />
+                <Blogs data={blogsData} />
             </main>
             <Footer />
         </div>

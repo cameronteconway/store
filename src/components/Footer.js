@@ -8,6 +8,24 @@ const Footer = () => {
             <div className='wrapper'>
                 <div className='footer-container'>
                     <div className='links'>
+                        <span className='footer-column-title'>Information</span>
+                        <a className='link' href='/#'>
+                            Size guide
+                        </a>
+                        <a className='link' href='/#'>
+                            Careers
+                        </a>
+                        <a className='link' href='/#'>
+                            Store Locator
+                        </a>
+                        <a className='link' href='/#'>
+                            Privacy policy
+                        </a>
+                        <a className='link' href='/#'>
+                            Disclaimer
+                        </a>
+                    </div>
+                    <div className='links'>
                         <span className='footer-column-title'>Delivery</span>
                         <a className='link' href='/#'>
                             UK Shipping
@@ -25,19 +43,25 @@ const Footer = () => {
                             Returns ourside UK
                         </a>
                     </div>
+
                     <div className='links'>
-                        <span className='footer-column-title'>Information</span>
+                        <span className='footer-column-title'>
+                            Customer Service
+                        </span>
                         <a className='link' href='/#'>
                             FAQs
                         </a>
                         <a className='link' href='/#'>
-                            Terms of Service
-                        </a>
-                        <a className='link' href='/#'>
-                            Careers
-                        </a>
-                        <a className='link' href='/#'>
                             Refund Policy
+                        </a>
+                        <a className='link' href='/#'>
+                            Work with us
+                        </a>
+                        <a className='link' href='/#'>
+                            Sustainability
+                        </a>
+                        <a className='link' href='/#'>
+                            Payment methods
                         </a>
                     </div>
                 </div>

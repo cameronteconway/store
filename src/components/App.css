@@ -43,3 +43,15 @@ section:first-of-type {
 section:last-of-type {
     padding-bottom: 4rem;
 }
+
+@media only screen and (min-width: 600px) {
+}
+
+@media only screen and (min-width: 768px) {
+}
+
+@media only screen and (min-width: 992px) {
+}
+
+@media only screen and (min-width: 1200px) {
+}
