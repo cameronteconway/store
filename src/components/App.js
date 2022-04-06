@@ -2,6 +2,7 @@ import React from 'react';
 import Header from './Header';
 import Blogs from './Blogs';
 import Social from './Social';
+import Signup from './Signup';
 import Trends from './Trends';
 import Footer from './Footer';
 
@@ -15,8 +16,9 @@ const App = () => {
         <div>
             <Header />
             <main id='content'>
-                <Trends />
                 <Social />
+                <Trends />
+                <Signup />
                 <Blogs data={blogsData} />
             </main>
             <Footer />

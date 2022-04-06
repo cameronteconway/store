@@ -5,7 +5,7 @@
     -webkit-column-gap: 30px;
     column-gap: 30px;
     grid-row-gap: 20px;
-    row-gap: 30px;
+    row-gap: 50px;
 }
 .section-title {
     color: var(--pink);
@@ -50,6 +50,7 @@
         grid-column-gap: 30px;
         -webkit-column-gap: 30px;
         column-gap: 30px;
+        row-gap: 30px;
     }
 }
 

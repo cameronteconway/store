@@ -2,17 +2,13 @@ import React from 'react';
 
 import './Social.css';
 
-const Social = ({ content }) => {
+const Social = () => {
     return (
         <section>
-            <div className='colour-block'>
+            <div className='colour-block-social'>
                 <div className='wrapper'>
                     <div className='social-container'>
-                        <div className='newsletter'>
-                            <a href='/#'>
-                                <h2>SIGN UP TO THE NEWSLETTER</h2>
-                            </a>
-                        </div>
+                        <span className='follow-us'>GIVE US A FOLLOW!</span>
                         <div className='social-links'>
                             <a href='/#'>FACEBOOK</a>
                             <a href='/#'>INSTAGRAM</a>
