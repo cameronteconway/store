@@ -7,7 +7,6 @@
 
 .social-container .social-links a {
     color: var(--background);
-    font-weight: 600;
     text-decoration: none;
     display: block;
     font-size: 24px;
@@ -18,9 +17,46 @@
 }
 .social-container div.social-links a:hover,
 .social-container div.social-links a:focus {
-    color: var(--primary);
     outline: none;
 }
+.social-container div.social-links a:nth-of-type(1):hover,
+.social-container div.social-links a:nth-of-type(1):focus {
+    color: var(--twitter);
+}
+.social-container div.social-links a:nth-of-type(2):hover,
+.social-container div.social-links a:nth-of-type(2):focus {
+    background: -moz-linear-gradient(
+        45deg,
+        #f09433 0%,
+        #e6683c 25%,
+        #dc2743 50%,
+        #cc2366 75%,
+        #bc1888 100%
+    );
+    background: -webkit-linear-gradient(
+        45deg,
+        #f09433 0%,
+        #e6683c 25%,
+        #dc2743 50%,
+        #cc2366 75%,
+        #bc1888 100%
+    );
+    background: linear-gradient(
+        45deg,
+        #f09433 0%,
+        #e6683c 25%,
+        #dc2743 50%,
+        #cc2366 75%,
+        #bc1888 100%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.social-container div.social-links a:nth-of-type(3):hover,
+.social-container div.social-links a:nth-of-type(3):focus {
+    color: var(--youtube);
+}
+
 .social-container .social-links a:nth-of-type(2) {
     margin-top: 20px;
     margin-bottom: 20px;

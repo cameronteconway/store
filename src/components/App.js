@@ -1,6 +1,7 @@
 import React from 'react';
 import Header from './Header';
 import Blogs from './Blogs';
+import Explore from './Explore';
 import Social from './Social';
 import Signup from './Signup';
 import Trends from './Trends';
@@ -16,8 +17,9 @@ const App = () => {
         <div>
             <Header />
             <main id='content'>
-                <Social />
                 <Trends />
+                <Social />
+                <Explore />
                 <Signup />
                 <Blogs data={blogsData} />
             </main>

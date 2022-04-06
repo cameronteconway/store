@@ -10,9 +10,9 @@ const Social = () => {
                     <div className='social-container'>
                         <span className='hashtag'>Explore #COMWRYN</span>
                         <div className='social-links'>
-                            <a href='/#'>FACEBOOK</a>
-                            <a href='/#'>INSTAGRAM</a>
                             <a href='/#'>TWITTER</a>
+                            <a href='/#'>INSTAGRAM</a>
+                            <a href='/#'>youtube</a>
                         </div>
                     </div>
                 </div>

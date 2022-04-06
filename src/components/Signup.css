@@ -2,7 +2,6 @@
     background-color: var(--dark-background);
     width: 100%;
     padding: 2rem 0;
-    /* position: relative; */
 }
 
 .colour-block-signup .wrapper {
@@ -10,15 +9,19 @@
 }
 
 .signup-container .newsletter {
-    text-align: center;
     padding: 1.5rem 0;
-}
-.signup-container .newsletter h2 {
-    font-size: 23px;
 }
 .signup-container .newsletter a {
     text-decoration: none;
     color: var(--background);
+    display: block;
+    width: fit-content;
+    margin: 0 auto;
+    font-family: 'Acme', sans-serif;
+    word-spacing: 4px;
+}
+.signup-container .newsletter h2 {
+    font-size: 23px;
 }
 .signup-container .newsletter a:hover,
 .signup-container .newsletter a:focus {
@@ -29,7 +32,7 @@
 .weekly {
     position: absolute;
     top: -48px;
-    right: 0px;
+    right: 17px;
     padding: 5px 10px 8px 10px;
     font-weight: 500;
     letter-spacing: 1px;
