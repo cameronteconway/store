@@ -8,7 +8,7 @@ const Social = () => {
             <div className='colour-block-social'>
                 <div className='wrapper'>
                     <div className='social-container'>
-                        <span className='follow-us'>GIVE US A FOLLOW!</span>
+                        <span className='hashtag'>Explore #COMWRYN</span>
                         <div className='social-links'>
                             <a href='/#'>FACEBOOK</a>
                             <a href='/#'>INSTAGRAM</a>

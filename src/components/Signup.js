@@ -13,6 +13,7 @@ const Signup = () => {
                                 <h2>SIGN UP TO THE NEWSLETTER</h2>
                             </a>
                         </div>
+                        <span className='weekly'>Weekly updates</span>
                     </div>
                 </div>
             </div>

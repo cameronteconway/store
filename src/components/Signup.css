@@ -2,13 +2,14 @@
     background-color: var(--dark-background);
     width: 100%;
     padding: 2rem 0;
+    /* position: relative; */
 }
 
-.signup-container {
-    display: flex;
-    flex-direction: column;
+.colour-block-signup .wrapper {
+    position: relative;
 }
-.signup-container div {
+
+.signup-container .newsletter {
     text-align: center;
     padding: 1.5rem 0;
 }
@@ -25,6 +26,18 @@
     outline: none;
 }
 
+.weekly {
+    position: absolute;
+    top: -48px;
+    right: 0px;
+    padding: 5px 10px 8px 10px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    background-color: var(--cyan);
+    transform: rotate(3deg);
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 5px 15px;
+}
+
 @media only screen and (min-width: 600px) {
     .signup-container .newsletter h2 {
         font-size: 30px;
@@ -32,10 +45,6 @@
 }
 
 @media only screen and (min-width: 768px) {
-    .signup-container {
-        flex-direction: row;
-        justify-content: center;
-    }
     .signup-container div {
         text-align: center;
     }
