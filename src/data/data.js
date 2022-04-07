@@ -50,11 +50,13 @@ export const blogsData = [
 export const singleProduct1 = {
     image: '/images/yellow_jumpsuit_beach.png',
     alt: 'Woman next to the beach wearing a yellow two piece tracksuit',
+    text: 'summer',
 };
 
 export const singleProduct2 = {
     image: '/images/red_dress_orange_background.png',
     alt: 'Woman wearing a red dress on an orange background',
+    text: 'dresses',
 };
 
 export const doubleProduct1 = [

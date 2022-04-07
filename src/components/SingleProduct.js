@@ -11,6 +11,9 @@ const SingleProduct = ({ data }) => {
                         <div className='img-container'>
                             <img src={data.image} alt={data.alt} />
                         </div>
+                        <div className='product-info'>
+                            <span>{data.text}</span>
+                        </div>
                     </a>
                 </div>
             </div>
