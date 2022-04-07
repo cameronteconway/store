@@ -46,3 +46,35 @@ export const blogsData = [
         minutes: 12,
     },
 ];
+
+export const singleProduct1 = {
+    image: '/images/yellow_jumpsuit_beach.png',
+    alt: 'Woman next to the beach wearing a yellow two piece tracksuit',
+};
+
+export const singleProduct2 = {
+    image: '/images/red_dress_orange_background.png',
+    alt: 'Woman wearing a red dress on an orange background',
+};
+
+export const doubleProduct1 = [
+    {
+        image: '/images/bags.png',
+        alt: 'Pair of hands holding a black handbag infront of a yellow background',
+    },
+    {
+        image: '/images/shoes.png',
+        alt: 'A pair of shoes on a white surface infront of a blue background',
+    },
+];
+
+export const doubleProduct2 = [
+    {
+        image: '/images/glasses.png',
+        alt: 'A pair of gold framed glasses on a marble surface',
+    },
+    {
+        image: '/images/discover.png',
+        alt: 'A woman with flamboyant pink makeup wearing a matching pink dress',
+    },
+];
