@@ -1,5 +1,6 @@
 .colour-block-signup {
     background-color: var(--dark-background);
+    /* background-color: #e5e4e2; */
     width: 100%;
     padding: 2rem 0;
 }
@@ -9,7 +10,7 @@
 }
 
 .signup-container .newsletter {
-    padding: 1.5rem 0;
+    padding: 3rem 0;
 }
 .signup-container .newsletter a {
     text-decoration: none;
@@ -25,7 +26,7 @@
 }
 .signup-container .newsletter a:hover,
 .signup-container .newsletter a:focus {
-    color: var(--primary);
+    color: var(--pink);
     outline: none;
 }
 
@@ -43,13 +44,16 @@
 
 @media only screen and (min-width: 600px) {
     .signup-container .newsletter h2 {
-        font-size: 30px;
+        font-size: 32px;
     }
 }
 
 @media only screen and (min-width: 768px) {
     .signup-container div {
         text-align: center;
+    }
+    .signup-container .newsletter h2 {
+        font-size: 38px;
     }
 }
 

@@ -1,7 +1,8 @@
 .colour-block-social {
     background-color: var(--dark-background);
+    /* background-color: #e5e4e2; */
     width: 100%;
-    padding: 2rem 0;
+    padding: 3rem 0;
     position: relative;
 }
 
@@ -12,7 +13,7 @@
     font-size: 24px;
     text-align: center;
     letter-spacing: 1px;
-    text-transform: lowercase;
+    /* text-transform: lowercase; */
     font-family: 'Acme', sans-serif;
 }
 .social-container div.social-links a:hover,

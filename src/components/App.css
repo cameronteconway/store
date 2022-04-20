@@ -48,6 +48,15 @@ section:last-of-type {
     padding-bottom: 4rem;
 }
 
+.section-title {
+    color: var(--pink);
+    letter-spacing: 3px;
+    text-shadow: 2px 2px 0px var(--secondary);
+    margin-bottom: 30px;
+    font-size: 26px;
+    text-transform: uppercase;
+}
+
 @media only screen and (min-width: 600px) {
 }
 
@@ -58,4 +67,8 @@ section:last-of-type {
 }
 
 @media only screen and (min-width: 1200px) {
+    .section-title {
+        font-size: 30px;
+        margin-bottom: 35px;
+    }
 }

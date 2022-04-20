@@ -8,6 +8,9 @@ const Signup = () => {
             <div className='colour-block-signup'>
                 <div className='wrapper'>
                     <div className='signup-container'>
+                        {/* Be the first to know about our product launches and
+                        exclusive offers. Members receive 10% off your first
+                        purchase. */}
                         <div className='newsletter'>
                             <a href='/#'>
                                 <h2>SIGN UP TO THE NEWSLETTER</h2>

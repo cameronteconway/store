@@ -72,6 +72,10 @@ footer .copyright span a {
     width: fit-content;
     z-index: 2;
 }
+footer .copyright span a:hover,
+footer .copyright span a:focus {
+    outline: none;
+}
 footer .copyright span a:after {
     content: '';
     position: absolute;
