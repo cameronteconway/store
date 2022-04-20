@@ -5,8 +5,8 @@ import Social from './Social';
 import Signup from './Signup';
 import Footer from './Footer';
 import SingleProduct from './SingleProduct';
-import DoubleProduct from './DoubleProduct';
-import SocialSignup from './SocialSignup';
+// import DoubleProduct from './DoubleProduct';
+// import SocialSignup from './SocialSignup';
 
 import './App.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
@@ -14,9 +14,9 @@ import 'bootstrap-icons/font/bootstrap-icons.css';
 import {
     blogsData,
     singleProduct1,
-    doubleProduct1,
+    // doubleProduct1,
     singleProduct2,
-    doubleProduct2,
+    // doubleProduct2,
 } from '../data/data';
 
 const App = () => {

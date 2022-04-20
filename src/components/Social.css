@@ -13,7 +13,6 @@
     font-size: 24px;
     text-align: center;
     letter-spacing: 1px;
-    /* text-transform: lowercase; */
     font-family: 'Acme', sans-serif;
 }
 .social-container div.social-links a:hover,
@@ -50,7 +49,7 @@
         #cc2366 75%,
         #bc1888 100%
     );
-    -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 .social-container div.social-links a:nth-of-type(3):hover,

@@ -80,7 +80,7 @@ header .static-header h1 {
     padding-bottom: 20px;
     z-index: 10000;
     width: 100%;
-    margin-top: -87px;
+    margin-top: -88px;
     animation: fadeIn 0.2s both ease-in;
 }
 .sticky-header .header-wrapper {
