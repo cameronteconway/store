@@ -1,5 +1,4 @@
 .single-product-container {
-    max-width: 500px;
     margin: 0 auto;
     position: relative;
 }
@@ -17,11 +16,6 @@
 .single-product-container a:focus {
     outline: none;
 }
-/* .single-product-container a:hover img,
-.single-product-container a:focus img {
-    opacity: 0.8;
-} */
-
 .single-product-container a .product-info {
     position: absolute;
     display: none;

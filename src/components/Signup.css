@@ -1,6 +1,5 @@
 .colour-block-signup {
     background-color: var(--dark-background);
-    /* background-color: #e5e4e2; */
     width: 100%;
     padding: 2rem 0;
 }
@@ -9,25 +8,41 @@
     position: relative;
 }
 
-.signup-container .newsletter {
+.colour-block-signup form {
+    display: flex;
     padding: 3rem 0;
+    justify-content: center;
+    column-gap: 20px;
 }
-.signup-container .newsletter a {
-    text-decoration: none;
-    color: var(--background);
-    display: block;
-    width: fit-content;
-    margin: 0 auto;
+.colour-block-signup form .input-box {
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 0.75rem 0.75rem;
+    width: 450px;
+    font-size: 20px;
     font-family: 'Acme', sans-serif;
-    word-spacing: 4px;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 5px 15px;
 }
-.signup-container .newsletter h2 {
-    font-size: 23px;
+.colour-block-signup form .input-box:hover,
+.colour-block-signup form .input-box:focus {
+    outline: 3px solid var(--primary);
 }
-.signup-container .newsletter a:hover,
-.signup-container .newsletter a:focus {
-    color: var(--pink);
-    outline: none;
+.colour-block-signup form .submit-button {
+    border-radius: 10px;
+    border: 2px solid var(--primary);
+    padding: 0.75rem 1.5rem;
+    background-color: var(--primary);
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: bolder;
+    font-family: 'Caveat', cursive;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 5px 15px;
+}
+.colour-block-signup form .submit-button:hover,
+.colour-block-signup form .submit-button:focus {
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
 }
 
 .weekly {

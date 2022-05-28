@@ -3,20 +3,36 @@ import React from 'react';
 import './Signup.css';
 
 const Signup = () => {
+    const onSubmit = e => {
+        e.preventDefault();
+    };
+
     return (
         <section>
             <div className='colour-block-signup'>
                 <div className='wrapper'>
                     <div className='signup-container'>
-                        {/* Be the first to know about our product launches and
-                        exclusive offers. Members receive 10% off your first
-                        purchase. */}
                         <div className='newsletter'>
-                            <a href='/#'>
-                                <h2>SIGN UP TO THE NEWSLETTER</h2>
-                            </a>
+                            <form onSubmit={onSubmit}>
+                                <input
+                                    aria-labelledby='weekly-updates'
+                                    className='input-box'
+                                    type='email'
+                                    id='signup'
+                                    name='signupemails'
+                                />
+                                <input
+                                    title='Submit email address for weekly updates'
+                                    className='submit-button'
+                                    type='submit'
+                                    name='submit'
+                                    value='Sign Me Up'
+                                />
+                            </form>
                         </div>
-                        <span className='weekly'>Weekly updates</span>
+                        <span className='weekly' id='weekly-updates'>
+                            Sign up fo weekly updates
+                        </span>
                     </div>
                 </div>
             </div>
