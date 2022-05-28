@@ -20,6 +20,7 @@ const Signup = () => {
                                     type='email'
                                     id='signup'
                                     name='signupemails'
+                                    placeholder='Enter your email'
                                 />
                                 <input
                                     title='Submit email address for weekly updates'

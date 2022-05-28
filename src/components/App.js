@@ -18,9 +18,9 @@ const App = () => {
         <div>
             <Header />
             <main id='content'>
-                <SingleProduct data={singleProduct} />
-                <Signup />
                 <DoubleProduct data={doubleProduct} />
+                <Signup />
+                <SingleProduct data={singleProduct} />
                 {/* <SocialSignup /> */}
                 <Social />
                 <Blogs data={blogsData} />
