@@ -1,8 +1,8 @@
 import React from 'react';
 import Header from './Header';
 import Blogs from './Blogs';
-import Social from './Social';
-import Signup from './Signup';
+// import Social from './Social';
+// import Signup from './Signup';
 import Footer from './Footer';
 import SingleProduct from './SingleProduct';
 import DoubleProduct from './DoubleProduct';
