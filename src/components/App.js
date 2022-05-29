@@ -6,7 +6,6 @@ import Signup from './Signup';
 import Footer from './Footer';
 import SingleProduct from './SingleProduct';
 import DoubleProduct from './DoubleProduct';
-// import SocialSignup from './SocialSignup';
 
 import './App.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
@@ -18,11 +17,10 @@ const App = () => {
         <div>
             <Header />
             <main id='content'>
-                <DoubleProduct data={doubleProduct} />
-                <Signup />
                 <SingleProduct data={singleProduct} />
-                {/* <SocialSignup /> */}
-                <Social />
+                {/* <Signup /> */}
+                <DoubleProduct data={doubleProduct} />
+                {/* <Social /> */}
                 <Blogs data={blogsData} />
             </main>
             <Footer />

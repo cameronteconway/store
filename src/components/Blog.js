@@ -11,7 +11,12 @@ const Blog = ({ content }) => {
                     {content.day} {content.month}, {content.year}
                 </span>
                 <p>{content.description}</p>
-                <a href={content.link} className='read-more'>
+                <a
+                    href={content.link}
+                    className='read-more'
+                    target='_blank'
+                    rel='noopener noreferrer'
+                >
                     Read More
                 </a>
                 <div className='blog-detail'>

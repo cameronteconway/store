@@ -14,8 +14,6 @@
     --purple: #792359;
     --kakhi: #847b51;
     --white: #e9e8e8;
-    --cream: #fcf5c7;
-    --red: #fa9092;
     --twitter: #1da1f2;
     --youtube: #ff0000;
 }
@@ -42,8 +40,9 @@ section {
     padding: 3rem 0;
 }
 section:first-of-type {
-    padding-top: 40px;
+    padding-bottom: 0px;
 }
+
 section:last-of-type {
     padding-bottom: 4rem;
 }
