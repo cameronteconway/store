@@ -82,3 +82,81 @@ export const doubleProduct = [
 //         alt: 'A woman with flamboyant pink makeup wearing a matching pink dress',
 //     },
 // ];
+
+export const guaranteeDetails = [
+    {
+        title: 'Free Shipping',
+        iconId: 'truck',
+        text: 'Free Shipping on all orders',
+    },
+    {
+        title: 'Online Support',
+        iconId: 'headset',
+        text: 'Support online 24/7',
+    },
+    {
+        title: 'Money Return',
+        iconId: 'wallet2',
+        text: 'Money back guarantee',
+    },
+    {
+        title: 'Secure Payment',
+        iconId: 'credit-card',
+        text: 'Protect your details',
+    },
+];
+
+const information = [
+    'Size guide',
+    'Careers',
+    'Store locator',
+    'Privacy policy',
+    'Disclaimer',
+];
+const customerService = [
+    'FAQs',
+    'Refund policy',
+    'Work with us',
+    'Sustainability',
+    'Payment methods',
+];
+const delivery = [
+    'UK Shipping',
+    'European Shipping',
+    'Worldwide Shipping',
+    'UK Returns',
+    'Returns outside UK',
+];
+
+export const footerContent = [
+    { Information: information },
+    { 'Customer Service': customerService },
+    { Delivery: delivery },
+];
+
+export const socialLinks = [
+    {
+        id: 'instagram',
+    },
+    {
+        id: 'linkedin',
+    },
+    {
+        id: 'snapchat',
+    },
+    {
+        id: 'twitter',
+    },
+    {
+        id: 'wechat',
+    },
+    {
+        id: 'youtube',
+    },
+    {
+        id: 'telegram',
+    },
+    {
+        id: 'twitch',
+    },
+];

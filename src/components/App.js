@@ -1,16 +1,23 @@
-import React from 'react';
 import Header from './Header';
 import Blogs from './Blogs';
 // import Social from './Social';
 // import Signup from './Signup';
+// import Guarantee from './Guarantees';
 import Footer from './Footer';
 import SingleProduct from './SingleProduct';
 import DoubleProduct from './DoubleProduct';
 
-import './App.css';
+import '../styles/App.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 
-import { blogsData, singleProduct, doubleProduct } from '../data/data';
+import {
+    blogsData,
+    singleProduct,
+    doubleProduct,
+    // guaranteeDetails,
+    footerContent,
+    socialLinks,
+} from '../data/data';
 
 const App = () => {
     return (
@@ -21,9 +28,10 @@ const App = () => {
                 {/* <Signup /> */}
                 <DoubleProduct data={doubleProduct} />
                 {/* <Social /> */}
+                {/* <Guarantee data={guaranteeDetails} /> */}
                 <Blogs data={blogsData} />
             </main>
-            <Footer />
+            <Footer data={[footerContent, socialLinks]} />
         </div>
     );
 };

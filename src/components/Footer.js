@@ -1,68 +1,26 @@
-import React from 'react';
+import FooterColumn from './FooterColumn';
+import SocialLink from './SocialLink';
 
-import './Footer.css';
+import '../styles/Footer.css';
 
-const Footer = () => {
+const Footer = ({ data }) => {
+    const renderColumns = data[0].map((column, index) => (
+        <FooterColumn data={column} key={index} />
+    ));
+
+    console.log(data[1]);
+    const renderSocialLinks = data[1].map((link, index) => (
+        <SocialLink data={link} key={index} />
+    ));
+
     return (
         <footer>
             <div className='wrapper'>
                 <div className='footer-container'>
-                    <div className='links'>
-                        <span className='footer-column-title'>Information</span>
-                        <a className='link' href='/#'>
-                            Size guide
-                        </a>
-                        <a className='link' href='/#'>
-                            Careers
-                        </a>
-                        <a className='link' href='/#'>
-                            Store Locator
-                        </a>
-                        <a className='link' href='/#'>
-                            Privacy policy
-                        </a>
-                        <a className='link' href='/#'>
-                            Disclaimer
-                        </a>
-                    </div>
-                    <div className='links'>
-                        <span className='footer-column-title'>Delivery</span>
-                        <a className='link' href='/#'>
-                            UK Shipping
-                        </a>
-                        <a className='link' href='/#'>
-                            European Shipping
-                        </a>
-                        <a className='link' href='/#'>
-                            Worldwide Shipping
-                        </a>
-                        <a className='link' href='/#'>
-                            UK Returns
-                        </a>
-                        <a className='link' href='/#'>
-                            Returns ourside UK
-                        </a>
-                    </div>
-
-                    <div className='links'>
-                        <span className='footer-column-title'>
-                            Customer Service
-                        </span>
-                        <a className='link' href='/#'>
-                            FAQs
-                        </a>
-                        <a className='link' href='/#'>
-                            Refund Policy
-                        </a>
-                        <a className='link' href='/#'>
-                            Work with us
-                        </a>
-                        <a className='link' href='/#'>
-                            Sustainability
-                        </a>
-                        <a className='link' href='/#'>
-                            Payment methods
-                        </a>
+                    {renderColumns}
+                    <div className='final-column'>
+                        <span>Location: GB (£)</span>
+                        <div className='social-links'>{renderSocialLinks}</div>
                     </div>
                 </div>
                 <div className='copyright'>

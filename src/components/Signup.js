@@ -1,6 +1,4 @@
-import React from 'react';
-
-import './Signup.css';
+import '../styles/Signup.css';
 
 const Signup = () => {
     const onSubmit = e => {

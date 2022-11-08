@@ -1,8 +1,6 @@
-import React from 'react';
-
 import Blog from './Blog';
 
-import './Blogs.css';
+import '../styles/Blogs.css';
 
 const Blogs = ({ data }) => {
     const renderBlogs = data.map((content, index) => {

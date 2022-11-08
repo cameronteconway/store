@@ -1,6 +1,4 @@
-import React from 'react';
-
-import './Social.css';
+import '../styles/Social.css';
 
 const Social = () => {
     return (

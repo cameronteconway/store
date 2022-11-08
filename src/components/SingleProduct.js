@@ -1,6 +1,4 @@
-import React from 'react';
-
-import './SingleProduct.css';
+import '../styles/SingleProduct.css';
 
 const SingleProduct = ({ data }) => {
     return (

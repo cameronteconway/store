@@ -1,6 +1,4 @@
-import React from 'react';
-
-import './DoubleProduct.css';
+import '../styles/DoubleProduct.css';
 
 const DoubleProduct = ({ data }) => {
     return (
