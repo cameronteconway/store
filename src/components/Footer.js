@@ -20,6 +20,8 @@ const Footer = ({ data }) => {
                     {renderColumns}
                     <div className='final-column'>
                         <span>Location: GB (£)</span>
+                        <br />
+                        <span>Language: English</span>
                         <div className='social-links'>{renderSocialLinks}</div>
                     </div>
                 </div>

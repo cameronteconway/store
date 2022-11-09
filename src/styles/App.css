@@ -40,7 +40,7 @@ section {
     padding: 3rem 0;
 }
 section:first-of-type {
-    padding-bottom: 0px;
+    /* padding-bottom: 0px; */
 }
 
 section:last-of-type {

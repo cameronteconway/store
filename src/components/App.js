@@ -1,10 +1,9 @@
 import Header from './Header';
 import Blogs from './Blogs';
-// import Social from './Social';
 // import Signup from './Signup';
-// import Guarantee from './Guarantees';
+import Guarantee from './Guarantees';
 import Footer from './Footer';
-import SingleProduct from './SingleProduct';
+// import SingleProduct from './SingleProduct';
 import DoubleProduct from './DoubleProduct';
 
 import '../styles/App.css';
@@ -12,9 +11,9 @@ import 'bootstrap-icons/font/bootstrap-icons.css';
 
 import {
     blogsData,
-    singleProduct,
+    // singleProduct,
     doubleProduct,
-    // guaranteeDetails,
+    guaranteeDetails,
     footerContent,
     socialLinks,
 } from '../data/data';
@@ -24,11 +23,10 @@ const App = () => {
         <div>
             <Header />
             <main id='content'>
-                <SingleProduct data={singleProduct} />
-                {/* <Signup /> */}
+                {/* <SingleProduct data={singleProduct} /> */}
                 <DoubleProduct data={doubleProduct} />
-                {/* <Social /> */}
-                {/* <Guarantee data={guaranteeDetails} /> */}
+                {/* <Signup /> */}
+                <Guarantee data={guaranteeDetails} />
                 <Blogs data={blogsData} />
             </main>
             <Footer data={[footerContent, socialLinks]} />
