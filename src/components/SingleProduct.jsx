@@ -1,5 +1,7 @@
 import '../styles/SingleProduct.css';
 
+import img1 from '../assets/windbreaker-landscape.jpg';
+
 const SingleProduct = ({ data }) => {
     return (
         <section>
@@ -7,7 +9,7 @@ const SingleProduct = ({ data }) => {
                 <div className='single-product-container'>
                     <a href='/#'>
                         <div className='img-container'>
-                            <img src={data.image} alt={data.alt} />
+                            <img src={img1} alt={data.alt} />
                         </div>
                         <div className='product-info'>
                             <span>{data.text}</span>

@@ -1,5 +1,8 @@
 import '../styles/DoubleProduct.css';
 
+import img1 from '../assets/yellow_jumpsuit_beach.png';
+import img2 from '../assets/red_dress_orange_background.png';
+
 const DoubleProduct = ({ data }) => {
     return (
         <section>
@@ -7,7 +10,7 @@ const DoubleProduct = ({ data }) => {
                 <div className='double-product-container'>
                     <a href='/#' className='single-product'>
                         <div className='img-container'>
-                            <img src={data[0].image} alt={data[0].alt} />
+                            <img src={img1} alt={data[0].alt} />
                         </div>
                         <div className='product-info'>
                             <span>{data[0].text}</span>
@@ -16,7 +19,7 @@ const DoubleProduct = ({ data }) => {
 
                     <a href='/#' className='single-product'>
                         <div className='img-container'>
-                            <img src={data[1].image} alt={data[1].alt} />
+                            <img src={img2} alt={data[1].alt} />
                         </div>
                         <div className='product-info'>
                             <span>{data[1].text}</span>

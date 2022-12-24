@@ -13,7 +13,7 @@ const months = [
     'December',
 ];
 
-const addDays = days => {
+const addDays = (days) => {
     const date = new Date();
     date.setDate(date.getDate() + days);
     const day = date.getDate();
@@ -48,40 +48,23 @@ export const blogsData = [
 ];
 
 export const singleProduct = {
-    image: '/images/windbreaker-landscape.jpg',
+    image: '/assets/windbreaker-landscape.jpg',
     alt: 'Colourful coats hung up around a room infront of a white background',
     text: 'coats',
 };
 
-// export const singleProduct2 = {
-//     image: '/images/red_dress_orange_background.png',
-//     alt: 'Woman wearing a red dress on an orange background',
-//     text: 'dresses',
-// };
-
 export const doubleProduct = [
     {
-        image: '/images/yellow_jumpsuit_beach.png',
+        image: '/assets/yellow_jumpsuit_beach.png',
         alt: 'Woman next to the beach wearing a yellow two piece tracksuit',
         text: 'summer',
     },
     {
-        image: '/images/red_dress_orange_background.png',
+        image: '/assets/red_dress_orange_background.png',
         alt: 'Woman wearing a red dress on an orange background',
         text: 'dresses',
     },
 ];
-
-// export const doubleProduct2 = [
-//     {
-//         image: '/images/glasses.png',
-//         alt: 'A pair of gold framed glasses on a marble surface',
-//     },
-//     {
-//         image: '/images/discover.png',
-//         alt: 'A woman with flamboyant pink makeup wearing a matching pink dress',
-//     },
-// ];
 
 export const guaranteeDetails = [
     {

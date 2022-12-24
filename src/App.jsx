@@ -1,12 +1,13 @@
-import Header from './Header';
-import Blogs from './Blogs';
+import { createRoot } from 'react-dom/client';
+import Header from './components/Header';
+import Blogs from './components/Blogs';
 // import Signup from './Signup';
-import Guarantee from './Guarantees';
-import Footer from './Footer';
+import Guarantee from './components/Guarantees';
+import Footer from './components/Footer';
 // import SingleProduct from './SingleProduct';
-import DoubleProduct from './DoubleProduct';
+import DoubleProduct from './components/DoubleProduct';
 
-import '../styles/App.css';
+import './styles/App.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 
 import {
@@ -16,7 +17,7 @@ import {
     guaranteeDetails,
     footerContent,
     socialLinks,
-} from '../data/data';
+} from './data/data';
 
 const App = () => {
     return (
@@ -34,4 +35,4 @@ const App = () => {
     );
 };
 
-export default App;
+createRoot(document.getElementById('root')).render(<App />);
