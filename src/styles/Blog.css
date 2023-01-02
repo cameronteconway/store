@@ -46,7 +46,7 @@ article .blog-item .read-more:after {
 }
 article .blog-item .read-more:hover:after,
 article .blog-item .read-more:focus:after {
-    top: 0%;
+    top: -16%;
 }
 
 article .blog-item .blog-detail {

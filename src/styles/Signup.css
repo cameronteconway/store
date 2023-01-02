@@ -108,16 +108,24 @@
     font-size: 38px;
     color: var(--primary);
     text-shadow: 2px 2px 0px var(--secondary);
-    -webkit-text-stroke: 2px;
+    -webkit-text-stroke: 1px;
     -webkit-text-stroke-color: var(--secondary);
 }
 .signup-container .large-text .outline {
     -webkit-text-fill-color: var(--cyan);
-    -webkit-text-stroke: 2px;
+    -webkit-text-stroke: 1px;
     -webkit-text-stroke-color: var(--purple);
     text-shadow: 2px 2px 0px var(--purple);
     text-decoration: none;
 }
+.signup-container .large-text .outline:hover,
+.signup-container .large-text .outline:focus {
+    -webkit-text-fill-color: var(--orange);
+    -webkit-text-stroke: 1px;
+    -webkit-text-stroke-color: var(--secondary);
+    text-shadow: 2px 2px 0px var(--secondary);
+}
+
 .signup-container .or {
     margin: 15px 0 15px 0;
     font-weight: 700;
@@ -135,7 +143,7 @@
     border: 2px solid var(--purple);
     padding: 0.75rem 0.75rem;
     background-color: transparent;
-    width: 60%;
+    width: 65%;
     font-size: 16px;
     font-family: 'Acme', sans-serif;
     appearance: none;
@@ -158,7 +166,7 @@
 
 .newsletter form .submit-button {
     border: 2px solid var(--purple);
-    width: 40%;
+    width: 35%;
     padding: 0.75rem 1.5rem;
     background-color: var(--purple);
     text-transform: uppercase;
@@ -167,16 +175,34 @@
     -webkit-appearance: none;
     border-radius: 0px;
     color: var(--background);
+    font-size: 16px;
 }
 .newsletter form .submit-button:hover,
 .newsletter form .submit-button:focus {
     background-color: transparent;
-    color: white;
+    color: var(--purple);
     cursor: pointer;
+    border-left: none;
 }
 
 @media only screen and (min-width: 768px) {
+    .newsletter form {
+        max-width: 700px;
+    }
     .signup-container .large-text {
         font-size: 48px;
+        -webkit-text-stroke: 2px;
+        -webkit-text-stroke-color: var(--secondary);
+    }
+    .signup-container .large-text .outline {
+        -webkit-text-fill-color: var(--cyan);
+        -webkit-text-stroke: 2px;
+        -webkit-text-stroke-color: var(--purple);
+    }
+    .signup-container .large-text .outline:hover,
+    .signup-container .large-text .outline:focus {
+        -webkit-text-fill-color: var(--orange);
+        -webkit-text-stroke: 2px;
+        -webkit-text-stroke-color: var(--secondary);
     }
 }

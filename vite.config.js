@@ -5,4 +5,7 @@ export default defineConfig({
     plugins: [react()],
     // index.html is in the src file
     root: 'src',
+    server: {
+        host: true,
+    },
 });
