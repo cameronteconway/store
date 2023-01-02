@@ -1,7 +1,7 @@
 import { createRoot } from 'react-dom/client';
 import Header from './components/Header';
 import Blogs from './components/Blogs';
-// import Signup from './Signup';
+import Signup from './components/Signup';
 import Guarantee from './components/Guarantees';
 import Footer from './components/Footer';
 // import SingleProduct from './SingleProduct';
@@ -26,8 +26,8 @@ const App = () => {
             <main id='content'>
                 {/* <SingleProduct data={singleProduct} /> */}
                 <DoubleProduct data={doubleProduct} />
-                {/* <Signup /> */}
-                <Guarantee data={guaranteeDetails} />
+                <Signup />
+                {/* <Guarantee data={guaranteeDetails} /> */}
                 <Blogs data={blogsData} />
             </main>
             <Footer data={[footerContent, socialLinks]} />

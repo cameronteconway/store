@@ -1,4 +1,4 @@
-.colour-block-signup {
+/* .colour-block-signup {
     background-color: var(--dark-background);
     width: 100%;
     padding: 2rem 0;
@@ -95,4 +95,88 @@
 }
 
 @media only screen and (min-width: 1200px) {
+} */
+
+/* New */
+.signup-container {
+    text-align: center;
+    color: var(--purple);
+}
+.signup-container .large-text {
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 38px;
+    color: var(--primary);
+    text-shadow: 2px 2px 0px var(--secondary);
+    -webkit-text-stroke: 2px;
+    -webkit-text-stroke-color: var(--secondary);
+}
+.signup-container .large-text .outline {
+    -webkit-text-fill-color: var(--cyan);
+    -webkit-text-stroke: 2px;
+    -webkit-text-stroke-color: var(--purple);
+    text-shadow: 2px 2px 0px var(--purple);
+    text-decoration: none;
+}
+.signup-container .or {
+    margin: 15px 0 15px 0;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.newsletter form {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    max-width: 500px;
+    margin: 40px auto 0 auto;
+}
+.newsletter form .input-box {
+    border: 2px solid var(--purple);
+    padding: 0.75rem 0.75rem;
+    background-color: transparent;
+    width: 60%;
+    font-size: 16px;
+    font-family: 'Acme', sans-serif;
+    appearance: none;
+    border-radius: 0px;
+    text-transform: uppercase;
+    color: var(--purple);
+}
+.newsletter form .input-box::placeholder {
+    color: var(--purple);
+}
+.newsletter form .input-box:hover,
+.newsletter form .input-box:focus {
+    outline: none;
+    box-shadow: 0px 0px 5px var(--cyan);
+}
+.newsletter form .input-box:hover + .submit-button,
+.newsletter form .input-box:focus + .submit-button {
+    box-shadow: 0px 0px 6px var(--cyan);
+}
+
+.newsletter form .submit-button {
+    border: 2px solid var(--purple);
+    width: 40%;
+    padding: 0.75rem 1.5rem;
+    background-color: var(--purple);
+    text-transform: uppercase;
+    font-family: 'Acme', sans-serif;
+    font-weight: bolder;
+    -webkit-appearance: none;
+    border-radius: 0px;
+    color: var(--background);
+}
+.newsletter form .submit-button:hover,
+.newsletter form .submit-button:focus {
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+}
+
+@media only screen and (min-width: 768px) {
+    .signup-container .large-text {
+        font-size: 48px;
+    }
 }
