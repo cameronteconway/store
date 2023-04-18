@@ -22,6 +22,30 @@ const addDays = (days) => {
     return { day, month, year };
 };
 
+// Banner
+import banner1 from '../assets/woman-tube-background.jpg';
+import banner2 from '../assets/woman-posing-background.jpg';
+import banner3 from '../assets/woman-hat-sunny-background.jpg';
+
+export const bannerImages = [
+    {
+        img: banner1,
+        alt: 'Woman walking through London tube station',
+        text: 'Stand out in a crowd',
+    },
+    {
+        img: banner2,
+        alt: 'Woman sitting on chair posing infront of white background',
+        text: 'Black and white styles',
+    },
+    {
+        img: banner3,
+        alt: 'Woman walking through sunny European town',
+        text: 'Summer Collection',
+    },
+];
+
+// Blog
 export const blogsData = [
     {
         title: 'The High Price of Fast Fashion',
@@ -46,12 +70,6 @@ export const blogsData = [
         minutes: 12,
     },
 ];
-
-export const singleProduct = {
-    image: '/assets/windbreaker-landscape.jpg',
-    alt: 'Colourful coats hung up around a room infront of a white background',
-    text: 'coats',
-};
 
 export const doubleProduct = [
     {
@@ -89,6 +107,15 @@ export const guaranteeDetails = [
     },
 ];
 
+// Four Product Component
+import img1 from '../assets/yellow_jumpsuit_beach.jpg';
+import img2 from '../assets/red_dress_orange_background.jpg';
+import img3 from '../assets/straps_yellow_background.jpg';
+import img4 from '../assets/yellow_dress_red_background.jpg';
+
+export const womenProducts = [img1, img2, img3, img4];
+
+// Footer
 const information = [
     'Size guide',
     'Careers',

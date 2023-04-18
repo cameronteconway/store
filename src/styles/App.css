@@ -1,5 +1,4 @@
 :root {
-    /* --primary: #ffe01c; */
     --primary: #ffda35;
     --secondary: #242f40;
     --background: #f6f7eb;
@@ -37,14 +36,14 @@ body {
 }
 
 section {
-    padding: 3rem 0;
+    padding: 4rem 0;
 }
 section:first-of-type {
     /* padding-bottom: 0px; */
 }
 
 section:last-of-type {
-    padding-bottom: 4rem;
+    padding-bottom: 5rem;
 }
 
 .section-title {
@@ -52,16 +51,20 @@ section:last-of-type {
     letter-spacing: 3px;
     text-shadow: 2px 2px 0px var(--secondary);
     margin-bottom: 30px;
-    font-size: 26px;
+    font-size: 30px;
     text-transform: uppercase;
 }
 
 @media only screen and (min-width: 600px) {
+    section {
+        padding: 5rem 0;
+    }
     section:first-of-type {
-        padding-top: 4rem;
+        padding-top: 3rem;
     }
     section:last-of-type {
-        padding-bottom: 4rem;
+        padding-top: 4rem;
+        padding-bottom: 7rem;
     }
 }
 
@@ -73,7 +76,7 @@ section:last-of-type {
 
 @media only screen and (min-width: 1200px) {
     .section-title {
-        font-size: 30px;
+        font-size: 32px;
         margin-bottom: 35px;
     }
 }

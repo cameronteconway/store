@@ -8,7 +8,6 @@ const Footer = ({ data }) => {
         <FooterColumn data={column} key={index} />
     ));
 
-    console.log(data[1]);
     const renderSocialLinks = data[1].map((link, index) => (
         <SocialLink data={link} key={index} />
     ));

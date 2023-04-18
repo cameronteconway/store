@@ -1,8 +1,19 @@
+import { useRef } from 'react';
 import '../styles/Signup.css';
 
 const Signup = () => {
+    const formRef = useRef(null);
+
     const onSubmit = (e) => {
         e.preventDefault();
+    };
+
+    const onFocus = (e) => {
+        formRef.current.style.boxShadow = '0px 0px 5px var(--cyan)';
+    };
+
+    const onBlur = (e) => {
+        formRef.current.style.boxShadow = 'unset';
     };
 
     return (
@@ -18,7 +29,7 @@ const Signup = () => {
                     <p className='or'>Or...</p>
                     <p className='large-text'>Join our mailing list?</p>
                     <div className='newsletter'>
-                        <form onSubmit={onSubmit}>
+                        <form onSubmit={onSubmit} ref={formRef}>
                             <input
                                 aria-labelledby='weekly-updates'
                                 className='input-box'
@@ -26,6 +37,8 @@ const Signup = () => {
                                 id='signup'
                                 name='signupemails'
                                 placeholder='Enter your email'
+                                onBlur={onBlur}
+                                onFocus={onFocus}
                             />
                             <input
                                 title='Submit email address for weekly updates'
