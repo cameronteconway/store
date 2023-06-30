@@ -8,7 +8,7 @@
     row-gap: 50px;
 }
 
-.blogs-read-more {
+.blogs-link {
     display: inline-block;
     margin-top: 30px;
     width: 100%;
@@ -18,18 +18,17 @@
     font-size: 18px;
     font-weight: 600;
     text-align: end;
-}
-.blogs-read-more:hover,
-.blogs-read-more:focus {
-    outline: none;
-    color: var(--pink);
-}
-.blogs-read-more span {
-    color: var(--pink);
-}
-.blogs-read-more:hover span,
-.blogs-read-more:focus span {
-    color: var(--secondary);
+    &:hover,
+    &:focus {
+        outline: none;
+        color: var(--pink);
+        .blogs-link__arrow {
+            color: var(--secondary);
+        }
+    }
+    &__arrow {
+        color: var(--pink);
+    }
 }
 
 @media only screen and (min-width: 600px) {

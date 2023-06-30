@@ -1,26 +1,40 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination } from 'swiper';
-import '../styles/Banner.css';
-import 'swiper/css';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 
-const Banner = ({ data }) => {
-    const renderBanners = data.map((banner, i) => {
-        let constinerClassName = `banner-slide banner-slide-${i + 1}`;
-        let spanClassName = `banner-text banner-text-${i + 1}`;
+import '../styles/Banner.scss';
+
+interface bannerImages {
+    img: string;
+    alt: string;
+    text: string;
+}
+
+interface Props {
+    data: bannerImages[];
+}
+
+const Banner = ({ data }: Props) => {
+    const renderBanners = data.map((banner: bannerImages, index: number) => {
+        let constinerClassName = `banner__slide banner__slide-${index + 1}`;
+        let spanClassName = `banner__text banner__text-${index + 1}`;
         return (
-            <SwiperSlide className={constinerClassName}>
-                <img className='banner-img' src={banner.img} alt={banner.alt} />
+            <SwiperSlide className={constinerClassName} key={index}>
+                <img
+                    className='banner__img'
+                    src={banner.img}
+                    alt={banner.alt}
+                />
                 <span className={spanClassName}>{banner.text}</span>
             </SwiperSlide>
         );
     });
 
     return (
-        <div className='banner-container'>
+        <div className='banner'>
             <Swiper
                 modules={[Navigation, Pagination]}
                 // navigation

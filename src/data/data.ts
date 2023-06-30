@@ -1,4 +1,4 @@
-const months = [
+const months: string[] = [
     'January',
     'February',
     'March',
@@ -13,12 +13,12 @@ const months = [
     'December',
 ];
 
-const addDays = (days) => {
-    const date = new Date();
+const addDays = (days: number) => {
+    const date: Date = new Date();
     date.setDate(date.getDate() + days);
-    const day = date.getDate();
-    const month = months[date.getMonth()].substring(0, 3);
-    const year = date.getFullYear();
+    const day: number = date.getDate();
+    const month: string = months[date.getMonth()].substring(0, 3);
+    const year: number = date.getFullYear();
     return { day, month, year };
 };
 
@@ -27,7 +27,13 @@ import banner1 from '../assets/woman-tube-background.jpg';
 import banner2 from '../assets/woman-posing-background.jpg';
 import banner3 from '../assets/woman-hat-sunny-background.jpg';
 
-export const bannerImages = [
+interface bannerImage {
+    img: string;
+    alt: string;
+    text: string;
+}
+
+export const bannerImages: bannerImage[] = [
     {
         img: banner1,
         alt: 'Woman walking through London tube station',
@@ -46,7 +52,18 @@ export const bannerImages = [
 ];
 
 // Blog
-export const blogsData = [
+interface Blog {
+    title: string;
+    description: string;
+    link: string;
+    day: number;
+    month: string;
+    year: number;
+    comments: number;
+    minutes: number;
+}
+
+export const blogsData: Blog[] = [
     {
         title: 'The High Price of Fast Fashion',
         description:
@@ -71,66 +88,30 @@ export const blogsData = [
     },
 ];
 
-export const doubleProduct = [
-    {
-        image: '/assets/yellow_jumpsuit_beach.png',
-        alt: 'Woman next to the beach wearing a yellow two piece tracksuit',
-        text: 'summer',
-    },
-    {
-        image: '/assets/red_dress_orange_background.png',
-        alt: 'Woman wearing a red dress on an orange background',
-        text: 'dresses',
-    },
-];
-
-export const guaranteeDetails = [
-    {
-        title: 'Free Shipping',
-        iconId: 'truck',
-        text: 'Free Shipping on all orders',
-    },
-    {
-        title: 'Online Support',
-        iconId: 'headset',
-        text: 'Support online 24/7',
-    },
-    {
-        title: 'Money Return',
-        iconId: 'wallet2',
-        text: 'Money back guarantee',
-    },
-    {
-        title: 'Secure Payment',
-        iconId: 'credit-card',
-        text: 'Protect your details',
-    },
-];
-
 // Four Product Component
 import img1 from '../assets/yellow_jumpsuit_beach.jpg';
 import img2 from '../assets/red_dress_orange_background.jpg';
 import img3 from '../assets/straps_yellow_background.jpg';
 import img4 from '../assets/yellow_dress_red_background.jpg';
 
-export const womenProducts = [img1, img2, img3, img4];
+export const womenProducts: string[] = [img1, img2, img3, img4];
 
 // Footer
-const information = [
+const information: string[] = [
     'Size guide',
     'Careers',
     'Store locator',
     'Privacy policy',
     'Disclaimer',
 ];
-const customerService = [
+const customerService: string[] = [
     'FAQs',
     'Refund policy',
     'Work with us',
     'Sustainability',
     'Payment methods',
 ];
-const delivery = [
+const delivery: string[] = [
     'UK Shipping',
     'European Shipping',
     'Worldwide Shipping',
@@ -138,13 +119,22 @@ const delivery = [
     'Returns outside UK',
 ];
 
-export const footerContent = [
-    { Information: information },
-    { 'Customer Service': customerService },
-    { Delivery: delivery },
+interface FooterContent {
+    title: string;
+    links: string[];
+}
+
+export const footerContent: FooterContent[] = [
+    { title: 'Information', links: information },
+    { title: 'Customer Service', links: customerService },
+    { title: 'Delivery', links: delivery },
 ];
 
-export const socialLinks = [
+interface SocialLink {
+    id: string;
+}
+
+export const socialLinks: SocialLink[] = [
     {
         id: 'instagram',
     },
