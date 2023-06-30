@@ -1,11 +1,11 @@
 import '../styles/SocialLink.scss';
 
-interface socialLinks {
+interface SocialLinks {
     id: string;
 }
 
 interface Props {
-    data: socialLinks;
+    data: SocialLinks;
 }
 
 const SocialLink = ({ data }: Props) => {

@@ -1,16 +1,16 @@
 import '../styles/FooterColumn.scss';
 
-interface footerContent {
+interface FooterContent {
     title: string;
     links: string[];
 }
 
 interface Props {
-    data: footerContent;
+    data: FooterContent;
 }
 
 const FooterColumn = ({ data }: Props) => {
-    const renderColumn = data.links.map((item, index) => (
+    const renderColumn = data.links.map((item: string, index: number) => (
         <a className='footer-column__link' href='/#' key={index}>
             {item}
         </a>

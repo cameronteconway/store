@@ -13,7 +13,9 @@ const months: string[] = [
     'December',
 ];
 
-const addDays = (days: number) => {
+const addDays = (
+    days: number
+): { day: number; month: string; year: number } => {
     const date: Date = new Date();
     date.setDate(date.getDate() + days);
     const day: number = date.getDate();

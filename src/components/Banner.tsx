@@ -7,18 +7,18 @@ import 'swiper/css/scrollbar';
 
 import '../styles/Banner.scss';
 
-interface bannerImages {
+interface BannerImages {
     img: string;
     alt: string;
     text: string;
 }
 
 interface Props {
-    data: bannerImages[];
+    data: BannerImages[];
 }
 
 const Banner = ({ data }: Props) => {
-    const renderBanners = data.map((banner: bannerImages, index: number) => {
+    const renderBanners = data.map((banner: BannerImages, index: number) => {
         let constinerClassName = `banner__slide banner__slide-${index + 1}`;
         let spanClassName = `banner__text banner__text-${index + 1}`;
         return (

@@ -1,6 +1,6 @@
 import '../styles/Blog.scss';
 
-interface blogsData {
+interface BlogsData {
     title: string;
     description: string;
     link: string;
@@ -12,7 +12,7 @@ interface blogsData {
 }
 
 interface Props {
-    content: blogsData;
+    content: BlogsData;
 }
 
 const Blog = ({ content }: Props) => {

@@ -2,7 +2,7 @@ import Blog from './Blog';
 
 import '../styles/Blogs.scss';
 
-interface blogsData {
+interface BlogsData {
     title: string;
     description: string;
     link: string;
@@ -14,11 +14,11 @@ interface blogsData {
 }
 
 interface Props {
-    data: blogsData[];
+    data: BlogsData[];
 }
 
 const Blogs = ({ data }: Props) => {
-    const renderBlogs = data.map((content: blogsData, index: number) => {
+    const renderBlogs = data.map((content: BlogsData, index: number) => {
         return <Blog key={index} content={content} />;
     });
 

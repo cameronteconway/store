@@ -1,6 +1,7 @@
 .social-link {
     font-size: 19px;
     color: var(--secondary);
+    width: max-content;
     &:hover,
     &:focus {
         color: var(--orange);
