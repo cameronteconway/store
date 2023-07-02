@@ -19,8 +19,8 @@ interface Props {
 
 const Banner = ({ data }: Props) => {
     const renderBanners = data.map((banner: BannerImages, index: number) => {
-        let constinerClassName = `banner__slide banner__slide-${index + 1}`;
-        let spanClassName = `banner__text banner__text-${index + 1}`;
+        const constinerClassName = `banner__slide banner__slide-${index + 1}`;
+        const spanClassName = `banner__text banner__text-${index + 1}`;
         return (
             <SwiperSlide className={constinerClassName} key={index}>
                 <img
