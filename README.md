@@ -5,3 +5,5 @@ The aim of this project is to demonstrate my design skills, and experiment with 
 ## Technologies
 
 The project is built using the frontend JavaScript library [React](https://reactjs.org/) along with TypeScript, styling is dealt with using SCSS following the BEM methodology.
+
+I have utilised the frontend testing tool [Cypress](https://www.cypress.io/), to create tests for my components.

@@ -5,7 +5,7 @@ import '../styles/Header.scss';
 const Header = () => {
     useEffect(() => {
         window.onscroll = () => {
-            let scrollTop =
+            const scrollTop =
                 window.scrollY !== undefined
                     ? window.scrollY
                     : (

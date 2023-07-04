@@ -17,7 +17,6 @@ import {
 } from './data/data';
 
 const App = () => {
-    console.log(womenProducts);
     return (
         <div>
             <Header />
