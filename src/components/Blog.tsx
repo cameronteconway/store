@@ -25,12 +25,13 @@ const Blog = ({ content }: Props) => {
                 </span>
                 <p className='blog__description'>{content.description}</p>
                 <a
+                    aria-label={`Explore ${content.title}`}
                     href={content.link}
                     className='blog__link'
                     target='_blank'
                     rel='noopener noreferrer'
                 >
-                    Read More
+                    Read blog post
                 </a>
                 <div className='blog__detail'>
                     <span className='blog__stat'>

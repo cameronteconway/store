@@ -1,9 +1,13 @@
-// eslint-disable-next-line no-undef
-importScripts(
-    'https://storage.googleapis.com/workbox-cdn/releases/6.4.1/workbox-sw.js'
-);
+// npm i workbox-sw
+// https://developer.chrome.com/docs/workbox/modules/workbox-sw/#convert-code-using-import-statements-to-use-workbox-sw
 
-workbox.routing.registerRoute(
+import { registerRoute } from 'workbox-routing';
+import { CacheFirst } from 'workbox-strategies';
+import { CacheableResponsePlugin } from 'workbox-cacheable-response';
+
+registerRoute(
     ({ request }) => request.destination === 'image',
-    new workbox.strategies.CacheFitst()
+    new CacheFirst({
+        plugins: [new CacheableResponsePlugin({ statuses: [0, 200] })],
+    })
 );
