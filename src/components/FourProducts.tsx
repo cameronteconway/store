@@ -1,3 +1,4 @@
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 import '../styles/FourProducts.scss';
 
 interface Product {
@@ -11,11 +12,12 @@ interface Props {
 
 const FourProducts = ({ data }: Props) => {
     const renderProducts = data.map((product: Product, index: number) => (
-        <img
+        <LazyLoadImage
             className='four-products__image'
             key={index}
             src={product.img}
             alt={product.alt}
+            loading='lazy'
         />
     ));
 
