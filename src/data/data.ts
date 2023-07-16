@@ -91,12 +91,34 @@ export const blogsData: Blog[] = [
 ];
 
 // Four Product Component
+interface FourProductImage {
+    img: string;
+    alt: string;
+}
+
 import img1 from '../assets/yellow_jumpsuit_beach.jpg';
 import img2 from '../assets/red_dress_orange_background.jpg';
 import img3 from '../assets/straps_yellow_background.jpg';
 import img4 from '../assets/yellow_dress_red_background.jpg';
 
-export const womenProducts: string[] = [img1, img2, img3, img4];
+export const womenProducts: FourProductImage[] = [
+    {
+        img: img1,
+        alt: 'Woman on a basketball court on a sunny day wearing a yellow jumpsuit.',
+    },
+    {
+        img: img2,
+        alt: 'Woman posing over an orange background in a red dress.',
+    },
+    {
+        img: img3,
+        alt: 'Woman facing away from the camera over a yellow background, wearing a black strapped top.',
+    },
+    {
+        img: img4,
+        alt: 'Woman on a red background posing in a yellow dress.',
+    },
+];
 
 // Footer
 const information: string[] = [
@@ -134,31 +156,40 @@ export const footerContent: FooterContent[] = [
 
 interface SocialLink {
     id: string;
+    text: string;
 }
 
 export const socialLinks: SocialLink[] = [
     {
         id: 'instagram',
+        text: 'Link to our Instagram',
     },
     {
         id: 'linkedin',
+        text: 'Link to our LinkedIn',
     },
     {
         id: 'snapchat',
+        text: 'Link to our Snapchat',
     },
     {
         id: 'twitter',
+        text: 'Link to our Twitter',
     },
     {
         id: 'wechat',
+        text: 'Link to our WeChat',
     },
     {
         id: 'youtube',
+        text: 'Link to our YouTube',
     },
     {
         id: 'telegram',
+        text: 'Link to our Telegram',
     },
     {
         id: 'twitch',
+        text: 'Link to our Twitch',
     },
 ];

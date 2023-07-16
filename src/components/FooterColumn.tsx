@@ -11,7 +11,12 @@ interface Props {
 
 const FooterColumn = ({ data }: Props) => {
     const renderColumn = data.links.map((item: string, index: number) => (
-        <a className='footer-column__link' href='/#' key={index}>
+        <a
+            className='footer-column__link'
+            aria-label={item}
+            href='/#'
+            key={index}
+        >
             {item}
         </a>
     ));
