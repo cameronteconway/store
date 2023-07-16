@@ -8,7 +8,7 @@ export default defineConfig({
         rollupOptions: {
             input: {
                 app: './index.html',
-                'service-worker': './service-worker.js',
+                'service-worker': './service-worker.ts',
             },
             output: {
                 entryFileNames: (assetInfo) => {
